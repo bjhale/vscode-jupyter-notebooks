@@ -1,0 +1,9 @@
+services:
+  jupyter:
+    #image: quay.io/jupyter/datascience-notebook:2025-12-22
+    build: ./docker
+    ports:
+      - "8888:8888"
+    environment:
+      JUPYTER_TOKEN: "123"
+    command: jupyter notebook --ip 0.0.0.0
