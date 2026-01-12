@@ -1,4 +1,4 @@
-# Jupyter Multi-Language Notebook Template
+# Jupyter Multi-Language Notebook Template for VSCode
 
 A VS Code Dev Container environment with integrated Jupyter support for Python, R, and TypeScript/JavaScript (via Deno). This template provides a ready-to-use data science workspace with popular libraries pre-installed, all running directly within VS Code.
 
