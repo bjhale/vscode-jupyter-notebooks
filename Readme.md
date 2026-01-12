@@ -23,8 +23,8 @@ A VS Code Dev Container environment with integrated Jupyter support for Python, 
 
 1. **Clone this repository** to your local machine:
    ```bash
-   git clone https://github.com/bjhale/jupyter-notebooks.git
-   cd jupyter-notebooks
+   git clone https://github.com/bjhale/vscode-jupyter-notebooks.git
+   cd vscode-jupyter-notebooks
    ```
 
 2. **Open in VS Code:**
