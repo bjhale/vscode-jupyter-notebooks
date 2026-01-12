@@ -18,6 +18,7 @@
     ],
     "postCreateCommand": "echo 'Container ready!'",
     "remoteUser": "root",
+    "containerUser": "jovyan",
     "mounts": [],
     "remoteEnv": {
         "JUPYTER_TOKEN": "123"
