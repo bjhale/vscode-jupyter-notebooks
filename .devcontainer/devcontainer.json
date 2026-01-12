@@ -1,26 +1,46 @@
 {
     "name": "Jupyter Notebooks",
     "build": {
-        "dockerfile": "../docker/Dockerfile"
+        "dockerfile": "Dockerfile"
     },
     "workspaceFolder": "/home/jovyan/work",
     "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": "true",
+            "username": "jovyan",
+            "userUid": "1000",
+            "userGid": "1000",
+            "upgradePackages": "true"
+        }
+    },
     "customizations": {
         "vscode": {
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/bin/python",
+            },
             "extensions": [
                 "ms-toolsai.jupyter",
                 "ms-python.python",
+                "ms-python.vscode-python-envs",
+                "ms-python.vscode-pylance",
                 "github.copilot",
-                "github.copilot-chat"
+                "github.copilot-chat",
+                "ms-toolsai.jupyter"
             ]
         }
     },
+    "overrideCommand": false,
     "forwardPorts": [
         8888
     ],
-    "postCreateCommand": "echo 'Container ready!'",
-    "remoteUser": "root",
-    "containerUser": "jovyan",
+    "portsAttributes": {
+        "8888": {
+            "label": "Jupyter",
+            "requireLocalPort": true,
+            "onAutoForward": "ignore"
+        }
+    },
     "mounts": [],
     "remoteEnv": {
         "JUPYTER_TOKEN": "123"
