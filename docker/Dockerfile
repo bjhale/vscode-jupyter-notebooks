@@ -1,4 +1,4 @@
-FROM quay.io/jupyter/datascience-notebook:2025-12-22
+FROM quay.io/jupyter/datascience-notebook:ubuntu-24.04
 
 # Install Deno Jupyter kernel for the notebook user
 RUN curl -fsSL https://deno.land/install.sh | sh
