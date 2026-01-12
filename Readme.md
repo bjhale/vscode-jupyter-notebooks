@@ -9,9 +9,6 @@ A VS Code Dev Container environment with integrated Jupyter support for Python, 
 - 🦕 **TypeScript/JavaScript** - Deno kernel for modern JavaScript/TypeScript notebooks
 - 📓 **Native Jupyter Integration** - Run notebooks directly in VS Code
 - 🤖 **GitHub Copilot Ready** - AI pair programming support pre-configured
-- 🐳 **Dev Container** - Consistent environment across all platforms
-- 🔄 **Auto-sync** - All files automatically synced between container and host
-- 🚀 **One-click Setup** - Open in VS Code and start coding immediately
 
 ## Prerequisites
 
@@ -19,7 +16,7 @@ A VS Code Dev Container environment with integrated Jupyter support for Python, 
 - **Docker Desktop** (Windows/Mac) or **Docker Engine** (Linux) - [Get Docker](https://docs.docker.com/get-docker/)
 - **Dev Containers Extension** for VS Code - [Install from Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
-## Quick Start
+## Setup
 
 1. **Clone this repository** to your local machine:
    ```bash
@@ -45,32 +42,6 @@ A VS Code Dev Container environment with integrated Jupyter support for Python, 
 5. **Start coding!**
    - Open any `.ipynb` file from the `tests/` folder
    - Or create a new notebook: Command Palette → **"Create: New Jupyter Notebook"**
-
-## Detailed Setup
-
-### First-Time Setup
-
-1. **Install Prerequisites:**
-   - Install VS Code from https://code.visualstudio.com/
-   - Install Docker Desktop from https://docs.docker.com/get-docker/
-   - Open VS Code and install the "Dev Containers" extension
-
-2. **Clone and Open:**
-   ```bash
-   git clone https://github.com/bjhale/jupyter-notebooks.git
-   code jupyter-notebooks
-   ```
-
-3. **Open in Dev Container:**
-   - When VS Code opens, you'll see a notification in the bottom-right
-   - Click **"Reopen in Container"**
-   - Alternatively: `Ctrl+Shift+P` → **"Dev Containers: Reopen in Container"**
-
-4. **Wait for Container Build:**
-   - First time will take several minutes (downloads ~2GB base image)
-   - You'll see progress in the VS Code terminal
-   - Status bar will show "Starting Dev Container..."
-   - When ready, status bar will show "Dev Container: Jupyter Notebooks"
 
 ### Verifying the Setup
 
