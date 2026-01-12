@@ -1,0 +1,26 @@
+{
+    "name": "Jupyter Notebooks",
+    "build": {
+        "dockerfile": "../docker/Dockerfile"
+    },
+    "workspaceFolder": "/home/jovyan/work",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/jovyan/work,type=bind",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-toolsai.jupyter",
+                "ms-python.python"
+            ]
+        }
+    },
+    "forwardPorts": [
+        8888
+    ],
+    "postCreateCommand": "echo 'Container ready!'",
+    "remoteUser": "root",
+    "mounts": [],
+    "remoteEnv": {
+        "JUPYTER_TOKEN": "123"
+    },
+    "postStartCommand": "nohup jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser --allow-root &"
+}
